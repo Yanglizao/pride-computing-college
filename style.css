@@ -17,20 +17,30 @@ body {
 header {
     background-color: #1a1a2e;
     color: #fff;
-    padding: 20px;
+    padding: 25px 20px;
+    text-align: center;
 }   
+
+header img {
+    width: 80px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    align-items: center;
+}
 
 .header-content {
     max-width: 960px;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 12px;
+    flex-direction: column;
 }
 
 
 .header-content img {
-    width: 70px;
+    width: 80px;
     height: auto;
     border-radius: 8px;
 }   
@@ -152,44 +162,51 @@ tr:hover{
 
 /* ====== FORM ===== */
 form {  
-    max-width: 500px;
-    margin-top: 15px;
-}   
+    max-width: 550px;
+    margin-top: 20px;
+} 
+
+.form-group {
+    margin-bottom: 18px;
+}
 
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
     font-weight: bold;
+    color: #1a1a2e;
 }        
 
 textarea, input {
     width: 100%;
-    padding: 11px 12px;
+    padding: 12px 14px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 6px;
     font-size: 15px;
     font-family: inherit;
+    transition: border-color 0.3s, box-shadow 0.3s;
 }   
 
 input:focus, textarea:focus{
     outline: none;
     border-color: #0f3460;
-    box-shadow: 0 0 0 2px rgba(15, 52, 96, 0.15);
+    box-shadow: 0 0 0 3px rgba(15, 52, 96, 0.12);
 }
 
 
 button {
     background-color: #0f3460;
     color: white;
-    padding: 12px 28px;
+    padding: 13px 30px;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s;
 }   
 
 button:hover {
     background-color: #1a1a2e;
+    transform: translateY(-1px);
 }   
 
 /* ====== FOOTER ====== */
