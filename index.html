@@ -11,7 +11,7 @@
 <body>
                        <!-- ======Header====== -->
     <header>
-        <img src="images/tech logo.webp" alt="Pride Computing College" style="width:10%; height: 60px;">
+        <img src="images/tech-logo.webp" alt="Pride Computing College" style="width:10%; height: 60px;">
         <h1>Pride Computing College</h1>
         <p>Empowering the next generation of tech professionals.</p>
     </header>
@@ -19,7 +19,7 @@
                        <!-- ======Navigation====== -->
 <nav>
     <ul>
-        <li><a href="#home">Home</a></li>
+        <li><a href="#indexx">Home</a></li>
         <li><a href="#about">About Us</a></li>
         <li><a href="#courses">Courses</a></li>
         <li><a href="#why-us">Why Choose Us</a></li>
@@ -70,7 +70,7 @@
 <section id="courses">
     <h2>Our Courses</h2>
 
-    <img src="images/comp lab.jpg" alt="Pride Computing College Courses" style="width:100%; height: 500px;">
+    <img src="images/comp-lab.jpg" alt="Pride Computing College Courses" class="hero-img">
 
     <h3>Diploma Programs</h3>
     <ul>
@@ -87,8 +87,8 @@
     </ul>
 
     <h3>Admission Requirements</h3>
-
-    <table border="1">
+<div class="table-wrap">
+    <table>
         <thead>
             <tr>
                 <th>Program</th>
@@ -195,6 +195,7 @@
             </tr>
         </tbody>
     </table>
+    </div>
 </section>
 
                         <!--Why Choose Us Section-->
@@ -226,7 +227,7 @@
 
                         <!--Contact Form-->
  <h3>Send us a Message</h3>    
- <form action="#" method="post">
+ <form id="contact-form" action="#" method="post" novalidate>
     <label for="name">Full Name</label> <br>
     <input type="text" id="name" name="name" required><br><br>
 
@@ -255,7 +256,7 @@
             
             <!-- Login Form -->
 
-            <form action="#" method="post">
+            <form id="login-form" action="#" method="post" novalidate>
                 <div class="form-group">
                     <label for="student-id">Student ID:</label>
                     <input type="text" id="student-id" name="student-id" placeholder="Enter your student ID" required>
@@ -286,6 +287,7 @@
     <p>&copy; 2026 Pride Computing College. All rights reserved.</p>
     <p>Building future-ready tech professionals</p>
 </footer>
+<script src="script.js"></script>
 
 </body>
 </html>
